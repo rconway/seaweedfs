@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+s3cmd --no-ssl \
+  --host=localhost:8333 \
+  --host-bucket=localhost:8333 \
+  --access_key='nonblank' \
+  --secret_key='nonblank' \
+  "$@"

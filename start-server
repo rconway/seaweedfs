@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+docker run --rm -p 8333:8333 -v $PWD/data:/data chrislusf/seaweedfs server -dir=/data -s3
